@@ -27,4 +27,11 @@ public class MainActivity extends AppCompatActivity {
         TextView output=findViewById(R.id.textView);
         output.setText(R.string.initial_value);
     }
+
+    public  void reduce_click(View view){
+        TextView output=findViewById(R.id.textView);
+        counter=Integer.parseInt(output.getText().toString());
+        counter--;
+        output.setText(Integer.toString(counter));
+    }
 }
